@@ -16,8 +16,8 @@ if (process.argv.slice(2).length !== 0) {
 
 /* ======= mihomo alpha======= */
 const MIHOMO_ALPHA_VERSION_URL =
-  'https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/version.txt'
-const MIHOMO_ALPHA_URL_PREFIX = `https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha`
+  'https://mirror.ghproxy.com/https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/version.txt'
+const MIHOMO_ALPHA_URL_PREFIX = `https://mirror.ghproxy.com/https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha`
 let MIHOMO_ALPHA_VERSION
 
 const MIHOMO_ALPHA_MAP = {
@@ -47,8 +47,8 @@ async function getLatestAlphaVersion() {
 
 /* ======= mihomo release ======= */
 const MIHOMO_VERSION_URL =
-  'https://github.com/MetaCubeX/mihomo/releases/latest/download/version.txt'
-const MIHOMO_URL_PREFIX = `https://github.com/MetaCubeX/mihomo/releases/download`
+  'https://mirror.ghproxy.com/https://github.com/MetaCubeX/mihomo/releases/latest/download/version.txt'
+const MIHOMO_URL_PREFIX = `https://mirror.ghproxy.com/https://github.com/MetaCubeX/mihomo/releases/download`
 let MIHOMO_VERSION
 
 const MIHOMO_MAP = {
@@ -239,37 +239,37 @@ async function downloadFile(url, path) {
 const resolveMmdb = () =>
   resolveResource({
     file: 'country.mmdb',
-    downloadURL: `https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb`
   })
 const resolveGeosite = () =>
   resolveResource({
     file: 'geosite.dat',
-    downloadURL: `https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat`
   })
 const resolveGeoIP = () =>
   resolveResource({
     file: 'geoip.dat',
-    downloadURL: `https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat`
   })
 const resolveASN = () =>
   resolveResource({
     file: 'ASN.mmdb',
-    downloadURL: `https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb`
   })
 const resolveEnableLoopback = () =>
   resolveResource({
     file: 'enableLoopback.exe',
-    downloadURL: `https://github.com/Kuingsmile/uwp-tool/releases/download/latest/enableLoopback.exe`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/Kuingsmile/uwp-tool/releases/download/latest/enableLoopback.exe`
   })
 const resolveSysproxy = () =>
   resolveResource({
     file: 'sysproxy.exe',
-    downloadURL: `https://github.com/pompurin404/sysproxy/releases/download/${arch}/sysproxy.exe`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/pompurin404/sysproxy/releases/download/${arch}/sysproxy.exe`
   })
 const resolveRunner = () =>
   resolveResource({
     file: 'mihomo-party-run.exe',
-    downloadURL: `https://github.com/pompurin404/mihomo-party-run/releases/download/${arch}/mihomo-party-run.exe`
+    downloadURL: `https://mirror.ghproxy.com/https://github.com/pompurin404/mihomo-party-run/releases/download/${arch}/mihomo-party-run.exe`
   })
 const resolveFont = async () => {
   const targetPath = path.join(cwd, 'src', 'renderer', 'src', 'assets', 'NotoColorEmoji.ttf')
@@ -278,7 +278,7 @@ const resolveFont = async () => {
     return
   }
   await downloadFile(
-    'https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf',
+    'https://mirror.ghproxy.com/https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf',
     targetPath
   )
 
